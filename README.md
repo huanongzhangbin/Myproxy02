@@ -9,7 +9,7 @@
 
 								代理类完成的功能：
 								 1. 调用目标方法，执行目标方法的功能
-								 2. 功能增强，在目标方法调用时，增加功能。
+								 2. 功能增强，在目标方法调用时，增加功能。  
 
 
          方法原型：
@@ -51,7 +51,7 @@
 
 			public static Object newProxyInstance(ClassLoader loader,
                                           Class<?>[] interfaces,
-                                          InvocationHandler h)
+                                          InvocationHandler h)  
 
 
 									
@@ -60,7 +60,6 @@
 	 2. 创建目标类实现接口
 	 3. 创建InvocationHandler接口的实现类，在invoke方法中完成代理类的功能
 	     1.调用目标方法
-		  2.增强功能
-
+             2.增强功能
 	 4.使用Proxy类的静态方法，创建代理对象。 并把返回值转为接口类型。
 
